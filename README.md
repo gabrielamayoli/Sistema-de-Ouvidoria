@@ -30,25 +30,15 @@ Passo 1: Baixe o script sistema_ouvidoria.sql na sessão de download
 Passo 2: Abra o MySQL Browser, escolha a opção OpenScript do menu File e selecione o arquivo sistema_ouvidoria.sql para que seja aberto;
 
 	
-
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
 	
-
-
-
-
-
-
-
-
-
-
 
 
 Passo 3: Execute o script para a criação do banco de dados com os dados mínimos para configuração de um novo Órgão;
 
 
 
-
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
 
 
 
@@ -65,8 +55,11 @@ Passo 3: Execute o script para a criação do banco de dados com os dados mínim
 	
 Passo 1: Baixe os arquivos-fonte do Sistema Ouvidoria e faça a configuração do projeto no Eclipse apontando para o diretório onde serão armazenados. Para isso, abra o Eclipse, vá em “File → Import”. Abrirá a tela de seleção do tipo de importação a se fazer. Escolha a opção “Maven → Existing Maven Project”
 
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
 
 Em seguida, você irá indicar ao Eclipse, onde está o código fonte da aplicação. Indique a pasta onde está o código da aplicação baixado do portal. O Eclipse irá 'enxergar' o arquivo de configuração 'pom.xml'. Selecione o arquivo e clique em Finish. Após isso, o Eclipse irá verificar as dependências e fará o download automático das bibliotecas que você irá precisar.
+
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
 
 
 Obs: O arquivo pom.xml do Maven, assim como outros arquivos de configuração, foram configurados para funcionamento da aplicação com o servidor Tomcat. Para utilização com outros servidores de aplicações, podem ser necessárias algumas alterações no arquivo, como por exemplo, remoção de bibliotecas que o servidor já possua.
@@ -74,7 +67,7 @@ Obs: O arquivo pom.xml do Maven, assim como outros arquivos de configuração, f
 Passo 2: Configuração de banco nos arquivos context.xml e hibernate.cfg.xml com o nome do database, usuário e senha criados. Abra o arquivo 'context.xml' no caminho indicado na figura abaixo
 
 
-
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
 
 
 
@@ -94,7 +87,7 @@ Procure pelas linhas onde estão os parâmetros “username” e “password”.
            
 
 
-
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
 
 
 
@@ -119,14 +112,7 @@ Agora, configure o arquivo 'hibernate.cfg.xml'. O arquivo está no caminho indic
 
 
 
-
-
-
-
-
-
-
-
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
 
 
 
@@ -136,9 +122,13 @@ Agora, configure o arquivo 'hibernate.cfg.xml'. O arquivo está no caminho indic
 
 Configure a string de conexão da aplicação com o banco de dados. Insira também o 'username' e o 'password' para acesso ao banco de dados. Não se esqueça de mudar o parâmetro “Show Sql” para false caso não queria que ele seja impresso no console/log.
 
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
+
 
 Passo 3: Geração do pacote “ouvidoria.war” da aplicação Ouvidoria.
 Antes de gerar o pacote 'war', é interessante que você clique com o botão direito do mouse no nome do projeto (ouvidoria) e escolha a opção “Refresh”. Também é recomendado que você clique com o botão direito do mouse no arquivo 'pom.xml' e escolha a opção “Run as → Maven Clean”. Com isso, garantimos que o arquivo 'war' será gerado totalmente atualizado. Feito isso, clique com o botão direito do mouse no nome do projeto (Ouvidoria), escolha a opção “Export → War File”. Escolha o local onde o arquivo será criado e clique em “Finish”.
+
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
 
 Passo 4: Após gerar o arquivo ouvidoria.war, copie o mesmo para a pasta  “webapps” do Tomcat . 
 
@@ -152,18 +142,25 @@ Caso você tenha instalado em sua máquina, outra versão do java, é necessári
 Passo 6: Após iniciar o Tomcat, acesse a aplicação pelo browser.  O Tomcat, por padrão, responde as requisições na porta 8080. Portanto, se as únicas modificações feitas no arquivo context.xml foram a do usuário e senha do banco, o caminho para acesso será “http://localhost:8080/ouvidoria”.
 
 
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
+
+
 
 ##Configurando um novo Órgão
 
 Passo 1: Para configurar uma nova Ouvidoria, você deverá acessar a aplicação com o usuário Administrador do Sistema (CPF → 11111111111, senha → 123). Para ter acesso ao menu “Acesso Restrito” é necessário alterar a URL substituindo o trecho “MainInternet” por “MainIntranet”:
 
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
+
 Passo 2: Após o acesso, configure os parâmetros gerais do sistema , acessando o 	menu “Administrar/Parâmetros Gerais”.
+
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
 
 Passo 3: Verifique se o campo “Diretório raiz da aplicação” foi preenchido com uma estrutura de diretório válida, com permissões de leitura e escrita para o usuário do Tomcat (novamente, para saber como fazer isso, é necessário saber qual sistema operacional e versão do sistema você está usando e buscar por um tutorial adequado, pois essas configurações podem variar). Esse será o diretório de trabalho do sistema e será usado para criar os anexos e outros arquivos necessários. Também tenha o cuidado de colocar um endereço válido para o servidor de e-mail que será usado na aplicação. Por último, tenha o cuidado de incluir uma “/” ao final do caminho do diretório raiz da aplicação.
 
 Passo 4: Cadastre o um novo Órgão, acessando o menu “Administrar/Manter Órgãos”
 	
-
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
 
 Nesta parte da instalação, é preciso ter um cuidado especial com as datas de configuração do novo órgão criado. Tenha certeza que:
 – A data de Inicio da Operação seja maior que a Data de Fim de Cadastramento.
@@ -174,12 +171,14 @@ Para as datas de fim, utilize a mesma lógica usada para as Datas de Início.
 
 Passo 5: Após o cadastro do novo órgão, atualize as configurações do órgão, acessando “Administrar/Manter >> Órgão”. Após isso clique no botão 	“Atualizar Configuração” pertinente ao Órgão cadastrado. Abaixo, explicações sobre os textos que são configuráveis e qual a finalidade de cada um.
 
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
 
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
+
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
+
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
 	
-
-
-
-
 
 Abaixo, uma explicação para os demais campos de configuração:
 
@@ -236,20 +235,9 @@ b) Vá novamente ao Eclipse, encontra a classe OrgãoCtrl.java e substitua o có
 	
 	
 	
-
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
 
 	
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -261,6 +249,8 @@ Uma vez parado o servidor, abra o arquivo 'ouvidoria.war' com um descompactador 
 Passo 7
 Por fim, acesse novamente a aplicação e já estará usando o novo Órgão.
 Para acessar a parte de “acesso restrito”, como na figura, basta editar a url de   acesso no navegador, trocando a parte onde diz “MainInternet” para “MainIntranet”
+
+![](https://raw.github.com/marcuslobo/manual/master/Imagens/114.JPG) &nbsp;
 	
 
 Passo 8
