@@ -24,12 +24,12 @@
       <div id="banner">
         <span id="logo"></span>
 
-        <a href="https://github.com/gabrielamayoli/Manual-de-instala--o-do-Sistema-de-Ouvidoria" class="button fork"><strong>View On GitHub</strong></a>
+        <a href="https://github.com/gabrielamayoli/Sistema-de-Ouvidoria" class="button fork"><strong>View On GitHub</strong></a>
         <div class="downloads">
           <span>Downloads:</span>
           <ul>
-            <li><a href="https://github.com/gabrielamayoli/Manual-de-instala--o-do-Sistema-de-Ouvidoria/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/gabrielamayoli/Manual-de-instala--o-do-Sistema-de-Ouvidoria/tarball/master" class="button">TAR</a></li>
+            <li><a href="https://github.com/gabrielamayoli/Sistema-de-Ouvidoria/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/gabrielamayoli/Sistema-de-Ouvidoria/tarball/master" class="button">TAR</a></li>
           </ul>
         </div>
       </div><!-- end banner -->
@@ -74,27 +74,45 @@ Caso você seja um usuário iniciante, sugerimos que você use o framework Demoi
 
 <p>Passo 2: Abra o MySQL Browser, escolha a opção OpenScript do menu File e selecione o arquivo sistema_ouvidoria.sql para que seja aberto;</p>
 
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/1.png" alt="">  </p>
+
 <p>Passo 3: Execute o script para a criação do banco de dados com os dados mínimos para configuração de um novo Órgão;</p>
+
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/2.png" alt="">  </p>
 
 <h2>
 <a name="aplica%C3%A7%C3%A3o" class="anchor" href="#aplica%C3%A7%C3%A3o"><span class="octicon octicon-link"></span></a>Aplicação</h2>
 
 <p>Passo 1: Baixe os arquivos-fonte do Sistema Ouvidoria e faça a configuração do projeto no Eclipse apontando para o diretório onde serão armazenados. Para isso, abra o Eclipse, vá em “File → Import”. Abrirá a tela de seleção do tipo de importação a se fazer. Escolha a opção “Maven → Existing Maven Project”</p>
 
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/3.png" alt="">  </p>
+
 <p>Em seguida, você irá indicar ao Eclipse, onde está o código fonte da aplicação. Indique a pasta onde está o código da aplicação baixado do portal. O Eclipse irá 'enxergar' o arquivo de configuração 'pom.xml'. Selecione o arquivo e clique em Finish. Após isso, o Eclipse irá verificar as dependências e fará o download automático das bibliotecas que você irá precisar.</p>
+
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/4.png" alt="">  </p>
 
 <p>Obs: O arquivo pom.xml do Maven, assim como outros arquivos de configuração, foram configurados para funcionamento da aplicação com o servidor Tomcat. Para utilização com outros servidores de aplicações, podem ser necessárias algumas alterações no arquivo, como por exemplo, remoção de bibliotecas que o servidor já possua.</p>
 
 <p>Passo 2: Configuração de banco nos arquivos context.xml e hibernate.cfg.xml com o nome do database, usuário e senha criados. Abra o arquivo 'context.xml' no caminho indicado na figura abaixo</p>
 
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/5.png" alt="">  </p>
+
 <p>Procure pelas linhas onde estão os parâmetros “username” e “password”. Nos valores destes parâmetros insira o nome de usuário e a senha que terão permissão de acesso ao banco de dados.</p>
+
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/6.png" alt="">  </p>
 
 <p>Agora, configure o arquivo 'hibernate.cfg.xml'. O arquivo está no caminho indicado na figura abaixo</p>
 
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/7.png" alt="">  </p>
+
 <p>Configure a string de conexão da aplicação com o banco de dados. Insira também o 'username' e o 'password' para acesso ao banco de dados. Não se esqueça de mudar o parâmetro “Show Sql” para false caso não queria que ele seja impresso no console/log.</p>
+
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/8.png" alt="">  </p>
 
 <p>Passo 3: Geração do pacote “ouvidoria.war” da aplicação Ouvidoria.
 Antes de gerar o pacote 'war', é interessante que você clique com o botão direito do mouse no nome do projeto (ouvidoria) e escolha a opção “Refresh”. Também é recomendado que você clique com o botão direito do mouse no arquivo 'pom.xml' e escolha a opção “Run as → Maven Clean”. Com isso, garantimos que o arquivo 'war' será gerado totalmente atualizado. Feito isso, clique com o botão direito do mouse no nome do projeto (Ouvidoria), escolha a opção “Export → War File”. Escolha o local onde o arquivo será criado e clique em “Finish”.</p>
+
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/9.png" alt="">  </p>
 
 <p>Passo 4: Após gerar o arquivo ouvidoria.war, copie o mesmo para a pasta  “webapps” do Tomcat . </p>
 
@@ -108,16 +126,24 @@ Para um ambiente Linux, no diretório raiz do Tomcat, crie o arquivo setenv.sh (
 
 <p>Passo 6: Após iniciar o Tomcat, acesse a aplicação pelo browser.  O Tomcat, por padrão, responde as requisições na porta 8080. Portanto, se as únicas modificações feitas no arquivo context.xml foram a do usuário e senha do banco, o caminho para acesso será “http://localhost:8080/ouvidoria”.</p>
 
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/10.png" alt="">  </p>
+
 <h2>
 <a name="configurando-um-novo-%C3%93rg%C3%A3o" class="anchor" href="#configurando-um-novo-%C3%93rg%C3%A3o"><span class="octicon octicon-link"></span></a>Configurando um novo Órgão</h2>
 
 <p>Passo 1: Para configurar uma nova Ouvidoria, você deverá acessar a aplicação com o usuário Administrador do Sistema (CPF → 11111111111, senha → 123). Para ter acesso ao menu “Acesso Restrito” é necessário alterar a URL substituindo o trecho “MainInternet” por “MainIntranet”:</p>
 
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/11.png" alt="">  </p>
+
 <p>Passo 2: Após o acesso, configure os parâmetros gerais do sistema , acessando o   menu “Administrar/Parâmetros Gerais”.</p>
+
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/12.png" alt="">  </p>
 
 <p>Passo 3: Verifique se o campo “Diretório raiz da aplicação” foi preenchido com uma estrutura de diretório válida, com permissões de leitura e escrita para o usuário do Tomcat (novamente, para saber como fazer isso, é necessário saber qual sistema operacional e versão do sistema você está usando e buscar por um tutorial adequado, pois essas configurações podem variar). Esse será o diretório de trabalho do sistema e será usado para criar os anexos e outros arquivos necessários. Também tenha o cuidado de colocar um endereço válido para o servidor de e-mail que será usado na aplicação. Por último, tenha o cuidado de incluir uma “/” ao final do caminho do diretório raiz da aplicação.</p>
 
 <p>Passo 4: Cadastre o um novo Órgão, acessando o menu “Administrar/Manter Órgãos”</p>
+
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/13.png" alt="">  </p>
 
 <p>Nesta parte da instalação, é preciso ter um cuidado especial com as datas de configuração do novo órgão criado. Tenha certeza que:
 – A data de Inicio da Operação seja maior que a Data de Fim de Cadastramento.
@@ -126,6 +152,14 @@ A data de Inicio Consulta de Resposta seja maior que a Data de Inicio de Acionam
 Para as datas de fim, utilize a mesma lógica usada para as Datas de Início.</p>
 
 <p>Passo 5: Após o cadastro do novo órgão, atualize as configurações do órgão, acessando “Administrar/Manter &gt;&gt; Órgão”. Após isso clique no botão   “Atualizar Configuração” pertinente ao Órgão cadastrado. Abaixo, explicações sobre os textos que são configuráveis e qual a finalidade de cada um.</p>
+
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/14.png" alt="">  </p>
+
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/15.png" alt="">  </p>
+
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/16.png" alt="">  </p>
+
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/17.png" alt="">  </p>
 
 <p>Abaixo, uma explicação para os demais campos de configuração:</p>
 
@@ -177,6 +211,8 @@ Após o cadastro, altere a classe OrgãoCtrl.java configurando o código do órg
 
 <p>b) Vá novamente ao Eclipse, encontra a classe OrgãoCtrl.java e substitua o código de órgão existente pelo código de órgão da nova instituição. </p>
 
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/18.png" alt="">  </p>
+
 <p>Feita esta substituição, salve o arquivo e execute novamente o procedimento de criação do  pacote  'ouvidoria.war'
 Esta parte é um pouco trabalhosa, então vamos explicar detalhadamente. Não será feito um novo “Deploy” da aplicação. Iremos apenas gerar o código fonte novamente, desta vez com o código do órgão criado. Antes de gerar o novo arquivo “ouvidoria.war”, pare o servidor tomcat. 
 Uma vez parado o servidor, abra o arquivo 'ouvidoria.war' com um descompactador de arquivo (os arquivos '.war' na verdade são arquivos compactados para serem lidos por servidores web). Depois de descompatar os arquivos, substitua os arquivos da pasta '[diretório do tomcat]/webapps/ouvidoria/', pelos novos arquivos e em seguida apague o arquivo 'ouvidoria.war' (isto impede que o servidor enxergue o novo arquivo “.war” e faça um novo deploy da aplicação). Em seguida, no console do terminal, digite o comando 'touch /[diretório do tomcat]/webapps/ouvidoria/WEB-INF/web.xml”. Este comando irá modificar a data e hora do arquivo web-xml, e com isso o servidor tomcat irá atualizar a aplicação. Feito isso, basta reinicar o servidor tomcat.</p>
@@ -184,6 +220,8 @@ Uma vez parado o servidor, abra o arquivo 'ouvidoria.war' com um descompactador 
 <p>Passo 7
 Por fim, acesse novamente a aplicação e já estará usando o novo Órgão.
 Para acessar a parte de “acesso restrito”, como na figura, basta editar a url de   acesso no navegador, trocando a parte onde diz “MainInternet” para “MainIntranet”</p>
+
+<p><img src="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/19.png" alt="">  </p>
 
 <p>Passo 8
 Por fim, crie as informações necessárias para uso do sistema. A melhor ordem é se criar “Sub Órgão”, “Localidades”, “Tipos de Mensagens”, “Assuntos de  Mensagens”, “Usuários”, nessa ordem, de forma a atender todas as dependências   para o funcionamento do sistema. Obrigatoriamente, você precisa cadastrar um   usuário no perfil “Ouvidor Geral”.</p>
