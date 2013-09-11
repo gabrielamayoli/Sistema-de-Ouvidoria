@@ -14,8 +14,8 @@ O sistema permitirá a emissão de relatórios gerenciais, apresentando estatís
 * Browser Firefox 3.0 ou superior<b> ²</b>.
 * Maven 2<b> ³</b>.
 
-	<b>¹.</b> A codificação padrão da aplicação deve ser “UTF-8”, esteja ela rodando dentro do Eclipse ou direto no servidor.
-	<b>².</b> Garantimos o correto funcionamento da aplicação neste browser. Para utilização de outros navegadores, deverão ser realizados testes para garantir a compatibilidade.
+	<b>¹.</b> A codificação padrão da aplicação deve ser “UTF-8”, esteja ela rodando dentro do Eclipse ou direto no servidor.<br>
+	<b>².</b> Garantimos o correto funcionamento da aplicação neste browser. Para utilização de outros navegadores, deverão ser realizados testes para garantir a compatibilidade.<br>
 	<b>³.</b> O Maven é o responsável por manter as dependências de bibliotecas utilizadas pelo software.
 
 <b>O software foi testado utilizando estas versões. A utilização de versões diferentes pode ocasionar erros.
@@ -25,19 +25,19 @@ Caso você seja um usuário iniciante, sugerimos que você use o <i>framework De
 
 ##3.1 - Banco de dados
 
-<b>Passo 1:</b> Baixe o script <i>sistema_ouvidoria.sql</i> na sessão de download
+<b>Passo 1:</b> Baixe o script <i>sistema_ouvidoria.sql</i> na sessão de download.
 
-<b>Passo 2:</b> Abra o MySQL Browser, escolha a opção OpenScript do menu File e selecione o arquivo <i>sistema_ouvidoria.sql</i> para que seja aberto;
+<b>Passo 2:</b> Abra o MySQL Browser, escolha a opção OpenScript do menu File e selecione o arquivo <i>sistema_ouvidoria.sql</i> para que seja aberto.
 
 ![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/1.png) &nbsp;
 	
-<b>Passo 3:</b> Execute o script para a criação do banco de dados com os dados mínimos para configuração de um novo Órgão;
+<b>Passo 3:</b> Execute o script para a criação do banco de dados com os dados mínimos para configuração de um novo Órgão.
 
 ![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/2.png) &nbsp;
 
 ##3.2 - Aplicação
 	
-<b>Passo 1:</b> Baixe os arquivos-fonte do Sistema Ouvidoria e faça a configuração do projeto no Eclipse apontando para o diretório onde serão armazenados. Para isso, abra o Eclipse, vá em “File → Import”. Abrirá a tela de seleção do tipo de importação a se fazer. Escolha a opção “Maven → Existing Maven Project”
+<b>Passo 1:</b> Baixe os arquivos-fonte do Sistema Ouvidoria e faça a configuração do projeto no Eclipse apontando para o diretório onde serão armazenados. Para isso, abra o Eclipse, vá em “File → Import”. Abrirá a tela de seleção do tipo de importação a se fazer. Escolha a opção “Maven → Existing Maven Project”.
 
 ![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/3.png) &nbsp;
 
@@ -115,45 +115,44 @@ Nesta parte da instalação, é preciso ter um cuidado especial com as datas de 
 	
 <b>Abaixo, uma explicação para os demais campos de configuração:</b>
 
-* <b>Notificar aos responsáveis por acionamento sem resposta / Hora/Minuto do Envio de Notificação (HH:MM)</b>
-
+* <b>Notificar aos responsáveis por acionamento sem resposta / Hora/Minuto do Envio de Notificação (HH:MM):</b>
 O sistema pode gerar um e-mail de cobrança para os responsáveis por responder aos acionamentos abertos no sistema. Juntamente com a mensagem de cobrança, é enviado o link de acesso direto a mensagem, bem como a situação em que ela se encontra. A mensagem é enviada diariamente, no horário indicado.
 
-* <b>Órgão permite anexar arquivo ao acionamento / Tamanho máximo para arquivos anexos (em KB)</b>
+* <b>Órgão permite anexar arquivo ao acionamento / Tamanho máximo para arquivos anexos (em KB):</b>
 É possível permitir que sejam anexados arquivos ao acionamento. Este campo habilita esta opção, e o tamanho máximo permitido para cada anexo. O tipo de arquivo que pode ser anexado é configurado na opção “Administrar → Parâmetros Gerais”
 
-* <b>Órgão permite mensagem digitalizada no acionamento</b>
+* <b>Órgão permite mensagem digitalizada no acionamento:</b>
 Funciona de maneira similar a opção anterior.
 
-* <b>Órgão possui código de acesso</b>
+* <b>Órgão possui código de acesso:</b>
 Indica se o usuário receberá um código de acesso para consulta aos acionamentos. O código de acesso é gerado junto com o protocolo de atendimento
 
-* <b>Existe bloqueio por falhas na digitação do código de acesso /Número máximo de falhas no código de acesso /Tempo de bloqueio pelo código de acesso (em minutos)</b>
+* <b>Existe bloqueio por falhas na digitação do código de acesso /Número máximo de falhas no código de acesso /Tempo de bloqueio pelo código de acesso (em minutos):</b>
 Indica se o sistema irá bloquear a consulta a um determinado protocolo, uma vez o código de acesso seja digitado errado. É necessário informar o número de tentativas erradas que irá resultar no bloqueio, e o tempo em minutos que este bloqueio irá funcionar.
 
-* <b>Existe bloqueio por falhas na digitação da pergunta para recuperação do código de acesso / Número máximo de falhas no código de acesso / Tempo de bloqueio pelo código de acesso (em minutos)</b>
+* <b>Existe bloqueio por falhas na digitação da pergunta para recuperação do código de acesso / Número máximo de falhas no código de acesso / Tempo de bloqueio pelo código de acesso (em minutos):</b>
 Similar a opção anterior.
 
-* <b>Atendente pode consultar mensagens durante o atendimento</b>
+* <b>Atendente pode consultar mensagens durante o atendimento:</b>
 Indica se o usuário com perfil de “Atendente” poderá acessar o sistema e consultar acionamentos durante a realização de um atendimento a usuário. 
 	
 <b>É exigido certificado digital para acesso ao órgão e a todos os sub-órgãos / é exigido certificado digital para acesso ao órgão e opcional para todos os sub-órgãos.<b>
 
-* <b>Nome do diretório do órgão</b>
+* <b>Nome do diretório do órgão:</b>
 Aqui é informado o diretório onde serão armazenados os dados do órgão criado. Note que o nome do diretório deve ser exatamente igual ao diretório criado, pois de outro modo, os anexos e imagens não serão salvos corretamente.
 
 <b>URL para consulta de funcionários</b>
 
-* <b>URL de suporte ao usuário</b>
+* <b>URL de suporte ao usuário:</b>
 Indica algum endereço internet/intranet que o usuário poderá acessar para ajudá-lo a fazer o acionamento de forma correta.
 
-* <b>Remetente dos e-mails que serão enviados pela aplicação</b>
+* <b>Remetente dos e-mails que serão enviados pela aplicação:</b>
 O e-mail informado aqui será visualizado pelos usuários como o remetente de todas as mensagens do sistema. Geralmente é usado um e-mail corporativo como [ouvidoria@orgao.br](mailto:'ouvidoria@orgao.br). Não é recomendado o uso de um e-mail pessoal.
 
-* <b>Tipos de acionador permitidos para o órgão</b>
+* <b>Tipos de acionador permitidos para o órgão:</b>
 Indica de que maneira o usuário poderá se identificar ao fazer um acionamento.
 
-* <b>Meios de envio de resposta permitidos para o órgão<b/>
+* <b>Meios de envio de resposta permitidos para o órgão:<b/>
 Indica que meio de comunicação o usuário pode informar para o recebimento de sua resposta.
 
 <b>Passo 6:</b> Após o cadastro, altere a classe <i>OrgãoCtrl.java</i> configurando o código do órgão (variável <b>orgaoId</b>),recém cadastrado, da seguinte forma:
