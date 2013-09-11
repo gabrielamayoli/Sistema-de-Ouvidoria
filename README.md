@@ -29,7 +29,10 @@ Caso você seja um usuário iniciante, sugerimos que você use o <i>framework De
 
 <b>Passo 2:</b> Abra o MySQL Browser, escolha a opção OpenScript do menu File e selecione o arquivo <i>sistema_ouvidoria.sql</i> para que seja aberto.
 
-![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/1.png) &nbsp;
+![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/1.png) 
+
+[Clique para ver a imagem ampliada](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/1.png)
+&nbsp;
 	
 <b>Passo 3:</b> Execute o script para a criação do banco de dados com os dados mínimos para configuração de um novo Órgão.
 
