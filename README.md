@@ -15,9 +15,7 @@ O sistema permitirá a emissão de relatórios gerenciais, apresentando estatís
 * Maven 2<b> ³</b>.
 
 	<b>¹.</b> A codificação padrão da aplicação deve ser “UTF-8”, esteja ela rodando dentro do Eclipse ou direto no servidor.
-	
 	<b>².</b> Garantimos o correto funcionamento da aplicação neste browser. Para utilização de outros navegadores, deverão ser realizados testes para garantir a compatibilidade.
-	
 	<b>³.</b> O Maven é o responsável por manter as dependências de bibliotecas utilizadas pelo software.
 
 <b>O software foi testado utilizando estas versões. A utilização de versões diferentes pode ocasionar erros.
@@ -49,7 +47,7 @@ Em seguida, você irá indicar ao Eclipse, onde está o código fonte da aplica�
 
 Obs: O arquivo <i>pom.xml</i> do Maven, assim como outros arquivos de configuração, foram configurados para funcionamento da aplicação com o servidor Tomcat. Para utilização com outros servidores de aplicações, podem ser necessárias algumas alterações no arquivo, como por exemplo, remoção de bibliotecas que o servidor já possua.
 
-<b>Passo 2:</b> Configuração de banco nos arquivos <i>context.xml</i> e <i>hibernate.cfg.xml</i> com o nome do database, usuário e senha criados. Abra o arquivo <i>'context.xml'</i> no caminho indicado na figura abaixo
+<b>Passo 2:</b> Configuração de banco nos arquivos <i>context.xml</i> e <i>hibernate.cfg.xml</i> com o nome do database, usuário e senha criados. Abra o arquivo <i>'context.xml'</i> no caminho indicado na figura abaixo.
 
 ![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/5.png) &nbsp;
 
@@ -57,7 +55,7 @@ Procure pelas linhas onde estão os parâmetros <i>“username”</i> e <i>“pa
 
 ![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/6.png) &nbsp;
 
-Agora, configure o arquivo <i>'hibernate.cfg.xml'</i>. O arquivo está no caminho indicado na figura abaixo
+Agora, configure o arquivo <i>'hibernate.cfg.xml'</i>. O arquivo está no caminho indicado na figura abaixo.
 
 ![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/7.png) &nbsp;
 
@@ -118,6 +116,7 @@ Nesta parte da instalação, é preciso ter um cuidado especial com as datas de 
 <b>Abaixo, uma explicação para os demais campos de configuração:</b>
 
 * <b>Notificar aos responsáveis por acionamento sem resposta / Hora/Minuto do Envio de Notificação (HH:MM)</b>
+
 O sistema pode gerar um e-mail de cobrança para os responsáveis por responder aos acionamentos abertos no sistema. Juntamente com a mensagem de cobrança, é enviado o link de acesso direto a mensagem, bem como a situação em que ela se encontra. A mensagem é enviada diariamente, no horário indicado.
 
 * <b>Órgão permite anexar arquivo ao acionamento / Tamanho máximo para arquivos anexos (em KB)</b>
