@@ -31,7 +31,7 @@ Caso você seja um usuário iniciante, sugerimos que você use o <i>framework De
 
 ![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/1.png) 
 
-[Clique para ver a imagem ampliada](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/1.png)
+[Clique para ver a imagem ampliada](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/1.png"target="_blank")
 &nbsp;
 	
 <b>Passo 3:</b> Execute o script para a criação do banco de dados com os dados mínimos para configuração de um novo Órgão.
