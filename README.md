@@ -36,17 +36,26 @@ Caso você seja um usuário iniciante, sugerimos que você use o <i>framework De
 
 <b>Passo 3:</b> Execute o script para a criação do banco de dados com os dados mínimos para configuração de um novo Órgão.
 
-![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/2.png) &nbsp;
+![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/2.png)
+
+<a href="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/2.png" target="_blank">Clique para ver a imagem ampliada</a>
+&nbsp;
 
 ##3.2 - Aplicação
 	
 <b>Passo 1:</b> Baixe os arquivos-fonte do Sistema Ouvidoria e faça a configuração do projeto no Eclipse apontando para o diretório onde serão armazenados. Para isso, abra o Eclipse, vá em “File → Import”. Abrirá a tela de seleção do tipo de importação a se fazer. Escolha a opção “Maven → Existing Maven Project”.
 
-![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/3.png) &nbsp;
+![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/3.png)
+
+<a href="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/3.png" target="_blank">Clique para ver a imagem ampliada</a>
+&nbsp;
 
 Em seguida, você irá indicar ao Eclipse, onde está o código fonte da aplicação. Indique a pasta onde está o código da aplicação baixado do portal. O Eclipse irá 'enxergar' o arquivo de configuração <i>'pom.xml'</i>. Selecione o arquivo e clique em “Finish“. Após isso, o Eclipse irá verificar as dependências e fará o download automático das bibliotecas que você irá precisar.
 
-![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/4.png) &nbsp;
+![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/4.png)
+
+<a href="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/4.png" target="_blank">Clique para ver a imagem ampliada</a>
+&nbsp;
 
 Obs: O arquivo <i>pom.xml</i> do Maven, assim como outros arquivos de configuração, foram configurados para funcionamento da aplicação com o servidor Tomcat. Para utilização com outros servidores de aplicações, podem ser necessárias algumas alterações no arquivo, como por exemplo, remoção de bibliotecas que o servidor já possua.
 
@@ -82,23 +91,35 @@ Caso você tenha instalado em sua máquina, outra versão do java, é necessári
 
 <b>Passo 6:</b> Após iniciar o Tomcat, acesse a aplicação pelo <i>browser</i>.  O Tomcat, por padrão, responde as requisições na porta 8080. Portanto, se as únicas modificações feitas no arquivo <i>context.xml</i> foram a do usuário e senha do banco, o caminho para acesso será [http://localhost:8080/ouvidoria](http://localhost:8080/ouvidoria).
 
-![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/10.png) &nbsp;
+![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/10.png)
+
+<a href="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/10.png" target="_blank">Clique para ver a imagem ampliada</a>
+&nbsp;
 
 ##4 - Configurando um novo Órgão
 
 <b>Passo 1:</b> Para configurar uma nova Ouvidoria, você deverá acessar a aplicação com o usuário Administrador do Sistema (CPF → 11111111111, senha → 123). Para ter acesso ao menu “Acesso Restrito” é necessário alterar a URL substituindo o trecho “MainInternet” por “MainIntranet”:
 
-![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/11.png) &nbsp;
+![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/11.png)
+
+<a href="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/11.png" target="_blank">Clique para ver a imagem ampliada</a>
+&nbsp;
 
 <b>Passo 2:</b> Após o acesso, configure os parâmetros gerais do sistema , acessando o 	menu “Administrar/Parâmetros Gerais”.
 
-![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/12.png) &nbsp;
+![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/12.png)
+
+<a href="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/12.png" target="_blank">Clique para ver a imagem ampliada</a>
+&nbsp;
 
 <b>Passo 3:</b> Verifique se o campo “Diretório raiz da aplicação” foi preenchido com uma estrutura de diretório válida, com permissões de leitura e escrita para o usuário do Tomcat (novamente, para saber como fazer isso, é necessário saber qual sistema operacional e versão do sistema você está usando e buscar por um tutorial adequado, pois essas configurações podem variar). Esse será o diretório de trabalho do sistema e será usado para criar os anexos e outros arquivos necessários. Também tenha o cuidado de colocar um endereço válido para o servidor de e-mail que será usado na aplicação. Por último, tenha o cuidado de incluir uma “/” ao final do caminho do diretório raiz da aplicação.
 
 <b>Passo 4:</b> Cadastre o um novo Órgão, acessando o menu “Administrar/Manter Órgãos”.
 	
-![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/13.png) &nbsp;
+![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/13.png)
+
+<a href="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/13.png" target="_blank">Clique para ver a imagem ampliada</a>
+&nbsp;
 
 Nesta parte da instalação, é preciso ter um cuidado especial com as datas de configuração do novo órgão criado. Tenha certeza que:
 * A data de Inicio da Operação seja maior que a data de Fim de Cadastramento.
@@ -108,13 +129,25 @@ Nesta parte da instalação, é preciso ter um cuidado especial com as datas de 
 
 <b>Passo 5:</b> Após o cadastro do novo órgão, atualize as configurações do órgão, acessando “Administrar/Manter >> Órgão”. Após isso clique no botão 	“Atualizar Configuração” pertinente ao Órgão cadastrado. Abaixo, explicações sobre os textos que são configuráveis e qual a finalidade de cada um.
 
-![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/14.png) &nbsp;
+![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/14.png)
 
-![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/15.png) &nbsp;
+<a href="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/14.png" target="_blank">Clique para ver a imagem ampliada</a>
+&nbsp;
 
-![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/16.png) &nbsp;
+![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/15.png)
 
-![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/17.png) &nbsp;
+<a href="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/15.png" target="_blank">Clique para ver a imagem ampliada</a>
+&nbsp;
+
+![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/16.png)
+
+<a href="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/16.png" target="_blank">Clique para ver a imagem ampliada</a>
+&nbsp;
+
+![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/17.png)
+
+<a href="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/17.png" target="_blank">Clique para ver a imagem ampliada</a>
+&nbsp;
 	
 <b>Abaixo, uma explicação para os demais campos de configuração:</b>
 
@@ -176,6 +209,9 @@ Uma vez parado o servidor, abra o arquivo <i>'ouvidoria.war'</i> com um descompa
 
 <b>Para acessar a parte de “acesso restrito”, como na figura, basta editar a url de acesso no navegador, trocando a parte onde diz “MainInternet” para “MainIntranet”.</b>
 
-![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/19.png) &nbsp;
+![](https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/19.png)
+
+<a href="https://raw.github.com/gabrielamayoli/Sistema-de-Ouvidoria/master/imagens/19.png" target="_blank">Clique para ver a imagem ampliada</a>
+&nbsp;
 	
 <b>Passo 8:</b> Por fim, crie as informações necessárias para uso do sistema. A melhor ordem é se criar “Sub Órgão”, “Localidades”, “Tipos de Mensagens”, “Assuntos de 	Mensagens”, “Usuários”, nessa ordem, de forma a atender todas as dependências 	para o funcionamento do sistema. Obrigatoriamente, você precisa cadastrar um 	usuário no perfil “Ouvidor Geral”.
